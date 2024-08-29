@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		DA2038172C7CA23C0046EC59 /* TasksToDoMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2038162C7CA23C0046EC59 /* TasksToDoMeApp.swift */; };
-		DA2038192C7CA23C0046EC59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2038182C7CA23C0046EC59 /* ContentView.swift */; };
+		DA2038192C7CA23C0046EC59 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2038182C7CA23C0046EC59 /* HomeView.swift */; };
 		DA20381B2C7CA23E0046EC59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA20381A2C7CA23E0046EC59 /* Assets.xcassets */; };
 		DA20381E2C7CA23E0046EC59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA20381D2C7CA23E0046EC59 /* Preview Assets.xcassets */; };
+		DA2038262C7CB9AE0046EC59 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2038252C7CB9AE0046EC59 /* ToDo.swift */; };
+		DA2038292C7CC1010046EC59 /* ToDoTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2038282C7CC1000046EC59 /* ToDoTile.swift */; };
+		DAD7898B2C80D4990006E18A /* DetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7898A2C80D4990006E18A /* DetailPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA2038132C7CA23C0046EC59 /* TasksToDoMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TasksToDoMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2038162C7CA23C0046EC59 /* TasksToDoMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksToDoMeApp.swift; sourceTree = "<group>"; };
-		DA2038182C7CA23C0046EC59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA2038182C7CA23C0046EC59 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DA20381A2C7CA23E0046EC59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA20381D2C7CA23E0046EC59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA2038252C7CB9AE0046EC59 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		DA2038282C7CC1000046EC59 /* ToDoTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTile.swift; sourceTree = "<group>"; };
+		DAD7898A2C80D4990006E18A /* DetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				DA2038162C7CA23C0046EC59 /* TasksToDoMeApp.swift */,
-				DA2038182C7CA23C0046EC59 /* ContentView.swift */,
+				DA2038272C7CC0B10046EC59 /* Views */,
+				DA2038242C7CB9680046EC59 /* Model */,
 				DA20381A2C7CA23E0046EC59 /* Assets.xcassets */,
 				DA20381C2C7CA23E0046EC59 /* Preview Content */,
 			);
@@ -65,6 +72,24 @@
 				DA20381D2C7CA23E0046EC59 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA2038242C7CB9680046EC59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA2038252C7CB9AE0046EC59 /* ToDo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA2038272C7CC0B10046EC59 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA2038182C7CA23C0046EC59 /* HomeView.swift */,
+				DA2038282C7CC1000046EC59 /* ToDoTile.swift */,
+				DAD7898A2C80D4990006E18A /* DetailPage.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA2038192C7CA23C0046EC59 /* ContentView.swift in Sources */,
+				DA2038262C7CB9AE0046EC59 /* ToDo.swift in Sources */,
+				DA2038292C7CC1010046EC59 /* ToDoTile.swift in Sources */,
+				DA2038192C7CA23C0046EC59 /* HomeView.swift in Sources */,
+				DAD7898B2C80D4990006E18A /* DetailPage.swift in Sources */,
 				DA2038172C7CA23C0046EC59 /* TasksToDoMeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
